@@ -2,10 +2,10 @@
 A C++ Ciphertext class that contains methods for manually and automatically decrypting ciphertext encoded by Caesar, linear, monoalphabetic substitution and Vigenere ciphers.
 
 ## Files
-- Ciphertext.h: A class containing methods for manual and automatic decryption.  <br>
+- Ciphertext.h: A class containing methods for manual and automatic decryption  <br>
 - main.cpp: Program to test the methods from Ciphertext.h <br>
 - keys.txt: Text file containing ~150,000 words (keys of different length) <br>
-- dictionary.txt: Text file for checking if words of decrypted ciphertext are valid for the Vigenere Cipher. <br>
+- dictionary.txt: Text file for checking if words of decrypted ciphertext are valid for the Vigenere Cipher <br>
 
 ## Demo
 Testing Caesar cipher decryption (with known shift of 7):
