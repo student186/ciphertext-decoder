@@ -33,7 +33,7 @@ c2.display();
 ...\ciphertext-decoder> ./a
 this is testing the linear cipher. if the message is readable then the ciphertext has been successfully decrypted.
 ```
-<br>
+<\br>
 Testing monoalphabetic substitution cipher decryption (with known substitution):
 ```
 // main.cpp
