@@ -20,7 +20,7 @@ c1.display();
 ...\ciphertext-decoder> ./a
 this is testing the caesar cipher. if the message is readable then the ciphertext has been successfully decrypted.
 ```
-
+<br>
 Testing linear cipher decryption (with known parameters a = 3, b = 4): 
 ```
 // main.cpp
@@ -33,7 +33,7 @@ c2.display();
 ...\ciphertext-decoder> ./a
 this is testing the linear cipher. if the message is readable then the ciphertext has been successfully decrypted.
 ```
-
+<br>
 Testing monoalphabetic substitution cipher decryption (with known substitution):
 ```
 // main.cpp
@@ -47,6 +47,7 @@ c3.display();
 ...\ciphertext-decoder> ./a
 this is testing the monoalphabetic substitution cipher. if the message is readable then the ciphertext has been successfully decrypted.
 ```
+<br>
 Testing Vigenere cipher (automatic decryption by brute force of ~150,000 keys)
 ```
 // main.cpp
