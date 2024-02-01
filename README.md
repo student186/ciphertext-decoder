@@ -4,6 +4,8 @@ A C++ Ciphertext class that contains methods for manually and automatically decr
 ## Files
 - Ciphertext.h: A class containing methods for manual and automatic decryption.  <br>
 - main.cpp: Program to test the methods from Ciphertext.h <br>
+- keys.txt: Text file containing ~150,000 words (keys of different length) <br>
+- dictionary.txt: Text file for checking if words of decrypted ciphertext are valid for the Vigenere Cipher. <br>
 
 ## Demo
 Testing Caesar cipher decryption (with known shift of 7):
@@ -16,9 +18,9 @@ c1.display();
 ```
 ...\ciphertext-decoder> g++ main.cpp
 ...\ciphertext-decoder> ./a
-...\ciphertext-decoder> this is testing the caesar cipher. if the message is readable then the ciphertext has been successfully decrypted.
+this is testing the caesar cipher. if the message is readable then the ciphertext has been successfully decrypted.
 ```
-\
+
 Testing linear cipher decryption (with known parameters a = 3, b = 4): 
 ```
 // main.cpp
@@ -29,9 +31,9 @@ c2.display();
 ```
 ...\ciphertext-decoder> g++ main.cpp
 ...\ciphertext-decoder> ./a
-...\ciphertext-decoder> this is testing the linear cipher. if the message is readable then the ciphertext has been successfully decrypted.
+this is testing the linear cipher. if the message is readable then the ciphertext has been successfully decrypted.
 ```
-\
+
 Testing monoalphabetic substitution cipher decryption (with known substitution):
 ```
 // main.cpp
@@ -39,11 +41,11 @@ Ciphertext c3 = Ciphertext("BIOK OK BVKBODH BIV CXDXPGWIPUVBOE KZUKBOBZBOXD EOWI
 c3.mscDecoder2("PUEQVSHIORFGCDXWTJKBZYANLM");
 c3.display();
 ```
-\
+
 ```
 ...\ciphertext-decoder> g++ main.cpp
 ...\ciphertext-decoder> ./a
-...\ciphertext-decoder> this is testing the monoalphabetic substitution cipher. if the message is readable then the ciphertext has been successfully decrypted.
+this is testing the monoalphabetic substitution cipher. if the message is readable then the ciphertext has been successfully decrypted.
 ```
 Testing Vigenere cipher (automatic decryption by brute force of ~150,000 keys)
 ```
@@ -51,7 +53,7 @@ Testing Vigenere cipher (automatic decryption by brute force of ~150,000 keys)
 Ciphertext c4 = Ciphertext("Zf lri'dv lbryueg srf drnqra brrnjfmghf, bcg'me praq ko gks dzguw dxrcr. Zvqe a edbpfm jrfp fr n uozuoz vszkeafs ujn'g tiuke rqcgxh, gks zvxg ocszcno gfvp vv ha wiag o drnqra brrnjfmgh. Jh qdvaghr fye Edbpfm Cdfmxrnsv Svnruoffr jlht poh lb yznq. Wvq grbfsej if tiuke flabce. Pkcaje gks zlmohf aw rnqrad pnuosiackg kfu'q owwv tb vsq rnq fzutk gks nltgrb. Kfue fvajea qiysee rt brrnjfmghf zwxc iavhmetyb obgenu.", "keys.txt", "dictionary.txt");
 c4.vcDecoder();
 ```
-\
+
 ```
 ...\ciphertext-decoder> g++ main.cpp
 ...\ciphertext-decoder> ./a
