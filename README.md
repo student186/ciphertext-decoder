@@ -8,10 +8,12 @@ A C++ Ciphertext class that contains methods for manually and automatically decr
 ## Demo
 Testing Caesar cipher decryption (with known shift of 7):
 ```
+Ciphertext c1 = Ciphertext("Aopz pz alzapun aol jhlzhy jpwoly. Pm aol tlzzhnl pz ylhkhisl aolu aol jpwolyalea ohz illu zbjjlzzmbssf kljyfwalk.");
 c1.ccDecoder(7);
- c1.display();
-cout << endl;
-...\ciphertext-decoder> 
+c1.display();
+```
+```
+...\ciphertext-decoder>
 ```
 \
 Testing linear cipher decryption (with known parameters a = 3, b = 4): 
