@@ -23,7 +23,7 @@ int main() {
     cout << endl;    
 
 
-    // monoalphabetic substitution cipher decryption (with known parameters a = , b = 4)
+    // monoalphabetic substitution cipher decryption (with known substitution)
                   //ABCDEFGHIJKLMNOPQRSTUVWXYZ  
     c3.mscDecoder2("PUEQVSHIORFGCDXWTJKBZYANLM");
     c3.display();
