@@ -51,7 +51,7 @@ this is testing the monoalphabetic substitution cipher. if the message is readab
 ```
 <br>
 
-Testing Vigenere cipher (automatic decryption by brute force of ~150,000 keys)
+Testing Vigenere cipher (automatic decryption by brute force of ~150,000 keys):
 ```
 // main.cpp
 Ciphertext c4 = Ciphertext("Zf lri'dv lbryueg srf drnqra brrnjfmghf, bcg'me praq ko gks dzguw dxrcr. Zvqe a edbpfm jrfp fr n uozuoz vszkeafs ujn'g tiuke rqcgxh, gks zvxg ocszcno gfvp vv ha wiag o drnqra brrnjfmgh. Jh qdvaghr fye Edbpfm Cdfmxrnsv Svnruoffr jlht poh lb yznq. Wvq grbfsej if tiuke flabce. Pkcaje gks zlmohf aw rnqrad pnuosiackg kfu'q owwv tb vsq rnq fzutk gks nltgrb. Kfue fvajea qiysee rt brrnjfmghf zwxc iavhmetyb obgenu.", "keys.txt", "dictionary.txt");
