@@ -294,10 +294,12 @@ class Ciphertext {
                     display();
                     break; // remove this line if further decrypting is needed
                 }
+                /*
                 else {
                     cout << key << ": ";
                 }
-                cout << endl;
+                */
+                //cout << endl;
             }
             keysFile.close();
         }

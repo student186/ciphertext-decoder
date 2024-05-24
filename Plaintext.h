@@ -38,12 +38,15 @@ class Plaintext {
         void display() {
             cout << cText << endl;
         }
+        string getCText() {
+            return cText;
+        }
         void ccEncoder(int shift) {
             reset();
             int* temp = new int[pLength]; // temporary array that holds the numbers representing letters a-z
             for (int i = 0; i < pLength; i++) {
                 if (isalpha(pText[i])) {
-                    temp[i] = (int)pText[i] + shift;
+                    temp[i] = (((int)pText[i] - 97 + shift) % 26) + 97;
                     cText = cText + (char)temp[i];
                 }
                 else {
