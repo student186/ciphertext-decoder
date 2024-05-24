@@ -50,12 +50,20 @@ class Ciphertext {
             }
             return str;
         }
+        string toupperStr(string& str) {
+            for (int i = 0; i < str.size(); i++) {
+                if (isalpha(str[i])) {
+                    str[i] = toupper(str[i]);
+                }
+            }
+            return str;
+        }
 
         // helper function for mscDecoder1
         void substituteLetter(string &cipherText, char ctLetter, char substitution) {
             for (int i = 0; i < cipherText.size(); i++) {
                 if (cipherText[i] == toupper(ctLetter)) {
-                    cipherText[i] = substitution;
+                    cipherText[i] = tolower(substitution);
                 }
             }
             cout << cipherText << endl;
@@ -218,7 +226,7 @@ class Ciphertext {
         // manual decoder for monoalphabetic substitution cipher that decrypts cText from user input of individual letters
         void mscDecoder1() {
             reset();
-            cout << cText << endl << endl;
+            cout << toupperStr(cText) << endl << endl;
             //tolowerStr(cipherText); commented out due to letters being replaced more than once; need uppercase (non-replaced) to distinguish from lowercase (replaced)
             string ctCopy = cText;
             char ctLetter; 
